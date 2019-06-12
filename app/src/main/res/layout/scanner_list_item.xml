@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/detalle_evento_id_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/scanner_list_item_id_detalle"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_detalle_evento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/detalle_evento_id_tag"
+        app:layout_constraintStart_toEndOf="@+id/detalle_evento_id_tag"
+        app:layout_constraintTop_toTopOf="@+id/detalle_evento_id_tag" />
+
+    <TextView
+        android:id="@+id/barcode_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/scanner_list_item_barcode"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/detalle_evento_id_tag"
+        app:layout_constraintTop_toBottomOf="@+id/detalle_evento_id_tag" />
+
+    <TextView
+        android:id="@+id/barcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/barcode_tag"
+        app:layout_constraintStart_toEndOf="@+id/barcode_tag"
+        app:layout_constraintTop_toTopOf="@+id/barcode_tag" />
+
+
+</android.support.constraint.ConstraintLayout>

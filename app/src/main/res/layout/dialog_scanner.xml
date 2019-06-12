@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:clickable="true"
+    android:elevation="4dp"
+    android:focusable="true"
+    android:padding="10dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/ubicacion_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Peso Neto: "
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/datos_adicionales_tag"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/datos_adicionales_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="32dp"
+            android:text="Datos Adicionales:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ubicacion_tag" />
+
+        <EditText
+            android:id="@+id/peso_neto"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="@+id/ubicacion_tag"
+            app:layout_constraintStart_toEndOf="@+id/ubicacion_tag"
+            app:layout_constraintTop_toTopOf="@+id/ubicacion_tag" />
+
+        <EditText
+            android:id="@+id/datos_adicionales"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxWidth="186dp"
+            app:layout_constraintBottom_toBottomOf="@+id/datos_adicionales_tag"
+            app:layout_constraintStart_toEndOf="@+id/datos_adicionales_tag"
+            app:layout_constraintTop_toTopOf="@+id/datos_adicionales_tag" />
+
+        <TextView
+            android:id="@+id/estatus_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="32dp"
+            android:text="Estatus:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/datos_adicionales_tag" />
+
+        <Spinner
+            android:id="@+id/estatus"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/estatus_tag"
+            app:layout_constraintStart_toEndOf="@+id/estatus_tag"
+            app:layout_constraintTop_toTopOf="@+id/estatus_tag" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/flash"
+        android:orderInCategory="200"
+        android:title="Flash"
+        android:icon="@drawable/flash_icon"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/scan_enabled"
+        android:orderInCategory="100"
+        android:title="Scan Enabled"
+        android:icon="@drawable/scan_icon"
+        app:showAsAction="ifRoom"/>
+</menu>

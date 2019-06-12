@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/eventos_entrada"
+            android:icon="@drawable/entrada_icon"
+            android:title="Eventos Entrada" />
+        <item
+            android:id="@+id/eventos_salida"
+            android:icon="@drawable/salida_icon"
+            android:title="Eventos Salida" />
+        <item
+                android:id="@+id/eventos_werner"
+                android:icon="@drawable/entrada_icon"
+                android:title="Eventos Entrada WERNER" />
+    </group>
+
+
+</menu>

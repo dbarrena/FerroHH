@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/evento_id_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/list_item_id_tag"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_evento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/evento_id_tag"
+        app:layout_constraintStart_toEndOf="@+id/evento_id_tag"
+        app:layout_constraintTop_toTopOf="@+id/evento_id_tag" />
+
+    <TextView
+        android:id="@+id/producto_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/list_item_producto_tag"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/contenedor_tag"
+        app:layout_constraintTop_toBottomOf="@+id/contenedor_tag" />
+
+    <TextView
+        android:id="@+id/producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/producto_tag"
+        app:layout_constraintStart_toEndOf="@+id/producto_tag"
+        app:layout_constraintTop_toTopOf="@+id/producto_tag" />
+
+    <TextView
+        android:id="@+id/palcas_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/list_item_placas_tag"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/producto_tag"
+        app:layout_constraintTop_toBottomOf="@+id/producto_tag" />
+
+    <TextView
+        android:id="@+id/placas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/palcas_tag"
+        app:layout_constraintStart_toEndOf="@+id/palcas_tag"
+        app:layout_constraintTop_toTopOf="@+id/palcas_tag" />
+
+    <TextView
+        android:id="@+id/placas_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/list_item_cliente_tag"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/palcas_tag"
+        app:layout_constraintTop_toBottomOf="@+id/palcas_tag" />
+
+    <TextView
+        android:id="@+id/cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/placas_tag"
+        app:layout_constraintStart_toEndOf="@+id/placas_tag"
+        app:layout_constraintTop_toTopOf="@+id/placas_tag" />
+
+    <TextView
+        android:id="@+id/fecha_evento_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Fecha Evento:"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/placas_tag"
+        app:layout_constraintTop_toBottomOf="@+id/placas_tag" />
+
+    <TextView
+        android:id="@+id/fechaEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fecha_evento_tag"
+        app:layout_constraintStart_toEndOf="@+id/fecha_evento_tag"
+        app:layout_constraintTop_toTopOf="@+id/fecha_evento_tag" />
+
+    <ImageButton
+        android:id="@+id/more_options"
+        android:layout_width="44dp"
+        android:layout_height="47dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/more_icon" />
+
+    <TextView
+        android:id="@+id/contenedor_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Contenedor:"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/evento_id_tag"
+        app:layout_constraintTop_toBottomOf="@+id/evento_id_tag" />
+
+    <TextView
+        android:id="@+id/contenedor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/contenedor_tag"
+        app:layout_constraintStart_toEndOf="@+id/contenedor_tag"
+        app:layout_constraintTop_toTopOf="@+id/contenedor_tag" />
+
+</android.support.constraint.ConstraintLayout>
